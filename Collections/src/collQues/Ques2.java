@@ -18,7 +18,7 @@ public class Ques2 {
     public static String returnUnique(String inputString)
     {
         char[] array=inputString.toCharArray();
-        LinkedHashSet<Character> tester=new LinkedHashSet<Character>();
+        LinkedHashSet<Character> tester=new LinkedHashSet();
         Iterator arrIt;
         Character arr[]=new Character[array.length];
         for(int i=0;i<arr.length;i++)

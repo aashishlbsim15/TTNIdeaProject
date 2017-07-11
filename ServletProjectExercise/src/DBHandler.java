@@ -1,5 +1,7 @@
-import java.sql.*;
 
+
+
+import java.sql.*;
 
 
 /**
@@ -11,11 +13,10 @@ public class DBHandler {
     private String uname="root";
     private String pass="toor";
     private Connection con;
-    Connection DBHandler()
-    {
+    public Connection establishConnecton(){
         try {
             Class.forName(DriverName);
-            con=DriverManager.getConnection(connectionURL);
+            con= DriverManager.getConnection(connectionURL,uname,pass);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
