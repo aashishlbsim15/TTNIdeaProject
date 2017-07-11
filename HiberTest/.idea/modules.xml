@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HiberTest.iml" filepath="$PROJECT_DIR$/.idea/modules/HiberTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HiberTest_main.iml" filepath="$PROJECT_DIR$/.idea/modules/HiberTest_main.iml" group="HiberTest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HiberTest_test.iml" filepath="$PROJECT_DIR$/.idea/modules/HiberTest_test.iml" group="HiberTest" />
+    </modules>
+  </component>
+</project>

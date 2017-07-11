@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="database" class="com.demo.spring.Database">
+        <constructor-arg value="8080" index="0"/>
+        <constructor-arg value="com.mysql.class.Driver" index="1"/>
+    </bean>
+    <bean id="tea" class="com.demo.spring.Tea"/>
+    <bean id="newTea" class="com.demo.spring.ExpressTea"/>
+    <bean id="hotDrink" class="com.demo.spring.ExpressTea" name="Express"/>
+    <bean id="teaRestaurant" class="com.demo.spring.Restaurant" autowire="constructor" scope="prototype">
+
+    </bean>
+
+    <bean id="expressTeaRestaurant" class="com.demo.spring.Restaurant" autowire="constructor">
+
+    </bean>
+
+    <bean id="complexBean" class="com.demo.spring.Complex">
+        <property name="list">
+            <list>
+                <value>"shubham"</value>
+                <value>"verma"</value>
+                <value>"indian"</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>25</value>
+                <value>"asdas"</value>
+                <value>46</value>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="india" value="+91"/>
+                <entry key="pakistan" value="+92"/>
+                <entry key="America" value="+1"/>
+                <entry key="sri lanka" value="+93"/>
+            </map>
+        </property>
+    </bean>
+</beans>
